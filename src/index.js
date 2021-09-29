@@ -71,8 +71,8 @@ class Game extends React.Component {
 			history: history.concat([{
 				squares: squares,
 				pos: {
-					row: i % 3,
-					col: Math.floor(i / 3),
+					row: Math.floor(i / 3),
+					col: i % 3,
 				}
 			}]),
 			stepNumber: history.length,
