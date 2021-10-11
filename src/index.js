@@ -4,13 +4,13 @@ import './index.css';
 
 function Square(props) {
 	return (
-		<button className="square" onClick={props.onClick}>
+		<button className="square" onClick={props.onClick} style={props.style}>
 			{props.value}
 		</button>
 	);
 }
 
-class Board extends React.Component {		
+class Board extends React.Component {	
     renderSquare(i) {
 		const isWinnerIdx = this.props.winnerIdx && this.props.winnerIdx.indexOf(i) !== -1;
         return (
